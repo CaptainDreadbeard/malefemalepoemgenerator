@@ -98,7 +98,17 @@ def GaveLine():
     flower = random.choice(FLOWERS)
     return '{} gave me a feeling of {} {} on a Sunday morning.'.format(pronoun, allit, flower)
 
+# if poem is for a female, write for female:
 
+if mode == 'female':
+    print(LikeLine())
+    print(ForLine())
+    print(RemindLine())
+    print(FeltLine())
+    print(DescribeLine())
+    print(MemoLine())
+    print(LongingLine())
+    print(GaveLine())
 
 # If writing for a man, print:
 
@@ -157,6 +167,7 @@ def MGaveLine():
     flower = random.choice(FLOWERS)
     return '{} gave me a feeling of {} {} on a Sunday morning.'.format(mpronoun, allit, flower)
 
+# if input is Male, write poem for a man
 
 if mode == 'male':
     print(MLikeLine())
